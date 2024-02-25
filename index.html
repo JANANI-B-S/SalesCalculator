@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Sales Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h1>Monthly Sales Calculator</h1>
+
+    <label for="Packets">Number of Packets:</label>
+    <input type="number" id="Packets" min="0">
+
+    <label for="coverPackets">Number of Cover Packets:</label>
+    <input type="number" id="coverPackets" min="0">
+
+    <label for="groceryCount">Number of Grocery Items:</label>
+    <input type="number" id="groceryCount" min="0">
+
+    <label for="groceryAmount">Amount per Grocery Item:</label>
+    <input type="number" id="groceryAmount" min="0">
+
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="displayTotal()">Display Total</button>
+    <button onclick="displayMonthlySummary()">Monthly Summary</button>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
